@@ -1,1 +1,3 @@
-# landing_page
+# Landing page
+
+Coming soon...
