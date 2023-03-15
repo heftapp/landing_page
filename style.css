@@ -1,0 +1,128 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header and Navigation styles */
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Hero section styles */
+#hero {
+    background-color: #333;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+}
+
+.btn {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005fa3;
+}
+
+/* Features section styles */
+#features {
+    padding: 50px;
+    text-align: center;
+}
+
+#features h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+#features ul {
+    margin-top: 20px;
+}
+
+#features ul li {
+    list-style: none;
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Waitlist section styles */
+#waitlist {
+    background-color: #f4f4f4;
+    padding: 50px;
+    text-align: center;
+}
+
+#waitlist h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+#waitlist form {
+    display: inline-block;
+}
+
+#waitlist label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+#waitlist input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
