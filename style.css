@@ -106,6 +106,8 @@ header img {
     display: inline-block;
     background-color: #4F9EE0;
     color: #fff;
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
     padding: 0 20px;
     border-radius: 5px;
     cursor: pointer;
