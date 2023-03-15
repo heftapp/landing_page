@@ -159,7 +159,6 @@ section .content {
     flex-direction: column;
     height: 100vh;
     background-color: #f4f4f4;
-    padding: 50px;
 }
 
 
