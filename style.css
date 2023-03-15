@@ -172,6 +172,7 @@ section .content {
 }
 
 #waitlist input {
+    font-family: 'Krub', sans-serif;
     padding: 0 8px;
     height: 40px;
     width: 100%;
