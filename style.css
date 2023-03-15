@@ -66,6 +66,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 section, header {
     scroll-snap-align: start;
     height: 100vh;
@@ -119,9 +120,10 @@ header img {
 
 
 section .content {
-    width: 30em;
+    max-width: 30em;
     display: flex;
     gap: 1em;
+    padding: 1rem;
     flex-direction: column;
     align-items: start;
 
@@ -133,7 +135,6 @@ section .content {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    padding: 50px;
     text-align: left;
 }
 
