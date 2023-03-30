@@ -30,6 +30,7 @@
         footer img {
             width: 8rem;
         }
+
         footer p {
             max-width: 25rem;
             font-size: 0.8rem;
@@ -48,13 +49,13 @@
             flex-direction: column;
         }
 
-        main > img {
+        main>img {
             width: 16rem;
             margin-bottom: 1.5rem;
         }
 
-        main > h2 {
-            margin-bottom: 1.5rem;            
+        main>h2 {
+            margin-bottom: 1.5rem;
         }
 
         main ul {
@@ -76,14 +77,22 @@
             right: 0;
             width: 35rem;
         }
+
         @media (max-width: 1500px) {
             #splash {
                 width: 30rem;
             }
         }
+
         @media (max-width: 1200px) {
             #splash {
                 display: none;
+            }
+        }
+
+        @media (max-width: 800px) {
+            footer {
+                padding: 1rem 1rem 6rem;
             }
         }
     </style>
@@ -101,7 +110,7 @@
             </li>
         </ul>
     </main>
-    <img id="splash" src="/splash.png" srcset="/splash@2x.png 2x, /splash@3x.png 3x"/>
+    <img id="splash" src="/splash.png" srcset="/splash@2x.png 2x, /splash@3x.png 3x" />
     <footer>
         <section>
             <p>&copy; 2023 Heft Tech LTD. All rights reserved.</p>
@@ -120,7 +129,8 @@
         </section>
         <section>
             <h4>Open source</h4>
-            <p>Heft is committed to giving back to the community through creating, maintaining, and contributing to open-source projects.</p>
+            <p>Heft is committed to giving back to the community through creating, maintaining, and contributing to
+                open-source projects.</p>
             <p><a href="https://github.com/sponsors/heftapp/" target="_blank">Support our work</a></p>
         </section>
     </footer>
