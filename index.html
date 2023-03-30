@@ -20,8 +20,16 @@
     <meta name="apple-itunes-app" content="app-id=1450655198">
     <style>
         footer {
-            padding: 1rem 2.5rem 6rem;
+            position: relative;
+            padding: 4rem 2.5rem 6rem;
             background: linear-gradient(70.93deg, #F5F5F5 26.94%, #EBEBEB 76.49%);
+            z-index: 0;
+        }
+
+        footer section:first-of-type {
+            position: absolute;
+            top: 1rem;
+            z-index: 10;
         }
 
         footer section:not(:last-of-type) {
@@ -43,6 +51,12 @@
         }
 
         main {
+            height: calc(100vh - 3.5rem);
+        }
+
+        main>div {
+            width: 100%;
+            position: absolute;
             display: flex;
             height: calc(100vh - 3.5rem);
             justify-content: center;
@@ -50,12 +64,12 @@
             flex-direction: column;
         }
 
-        main>img {
+        main>div>img {
             width: 16rem;
             margin-bottom: 1.5rem;
         }
 
-        main>h2 {
+        main h2 {
             margin-bottom: 1.5rem;
         }
 
@@ -73,6 +87,23 @@
         }
 
         #splash {
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            overflow: hidden;
+        }
+
+        #splash img {
+            width: 35rem;
+            z-index: 10;
+            position: absolute;
+            bottom: 0;
+        }
+
+        #splash>div {
+            height: 100%;
             position: absolute;
             bottom: 0;
             right: 0;
@@ -80,38 +111,51 @@
         }
 
         @media (max-width: 1500px) {
-            #splash {
+
+            #splash div,
+            #splash img {
                 width: 30rem;
             }
+
         }
 
+
         @media (max-width: 1200px) {
-            #splash {
-                display: none;
+            #splash div {
+                width: 100%;
+                padding-left: calc((100vw/2) + 150px);
             }
+
         }
+
 
         @media (max-width: 800px) {
             footer {
-                padding: 1rem 1rem 6rem;
+                padding: 4rem 1rem 6rem;
             }
         }
     </style>
 </head>
 
 <body>
+    <div id="splash">
+        <div>
+            <img src="/splash.png" srcset="/splash@2x.png 2x, /splash@3x.png 3x" />
+        </div>
+    </div>
     <main>
-        <img src="/logo.svg" alt="Heft logo" />
-        <h2>Simply a <b>reader</b></h2>
-        <ul>
-            <li>
-                <a href="https://apps.apple.com/gb/app/heft/id1450655198" target="_blank">
-                    <img src="/appstore-badge.svg" alt="Download on apple app-store" />
-                </a>
-            </li>
-        </ul>
+        <div>
+            <img src="/logo.svg" alt="Heft logo" />
+            <h2>Simply a <b>reader</b></h2>
+            <ul>
+                <li>
+                    <a href="https://apps.apple.com/gb/app/heft/id1450655198" target="_blank">
+                        <img src="/appstore-badge.svg" alt="Download on apple app-store" />
+                    </a>
+                </li>
+            </ul>
+        </div>
     </main>
-    <img id="splash" src="/splash.png" srcset="/splash@2x.png 2x, /splash@3x.png 3x" />
     <footer>
         <section>
             <p>&copy; 2023 Heft Tech LTD. All rights reserved.</p>
