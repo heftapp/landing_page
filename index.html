@@ -76,6 +76,22 @@
         main ul {
             list-style-type: none;
             display: flex;
+            gap: 1rem;
+        }
+
+        main ul li {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main ul li.inactive img {
+            opacity: 0.3;
+        }
+
+        main ul li.inactive::after {
+            content: 'Coming soon...';
+            font-size: 0.7rem;
+            text-align: center;
         }
 
         main ul img {
@@ -152,6 +168,11 @@
                     <a href="https://apps.apple.com/gb/app/heft/id1450655198" target="_blank">
                         <img src="/appstore-badge.svg" alt="Download on apple app-store" />
                     </a>
+                </li>
+                <li class="inactive">
+                    <!-- <a href="https://play.google.com/store/apps/details?id=app.heft.heft" target="_blank"> -->
+                        <img src="/google-play-badge.svg" alt="Google Play badge" />
+                    <!-- </a> -->
                 </li>
             </ul>
         </div>
